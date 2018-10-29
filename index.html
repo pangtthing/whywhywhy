@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>띵똥땡똥</title>
+	<script src="jquery-3.1.0.min.js"></script>
+	<style type="text/css">
+		html {background: url(img/background.gif) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+
+
+		#omaenoDiv {width:840px; height:300px; margin:auto; text-align:center;}
+		#omaeno {width:350px;}
+
+		#piano {width:840px; height:310px; margin:auto; margin-top:30px;}
+		#white1 {position:absolute; margin-left:0px;}
+		#white2 {position:absolute; margin-left:60px;}
+		#white3 {position:absolute; margin-left:120px;}
+		#black1 {position:absolute; margin-left:40px;}
+		#black2 {position:absolute; margin-left:100px;}
+		#white4 {position:absolute; margin-left:180px;}
+		#white5 {position:absolute; margin-left:240px;}
+		#white6 {position:absolute; margin-left:300px;}
+		#white7 {position:absolute; margin-left:360px;}
+		#black3 {position:absolute; margin-left:220px;}
+		#black4 {position:absolute; margin-left:280px;}
+		#black5 {position:absolute; margin-left:340px;}
+
+		#white8 {position:absolute; margin-left:420px;}
+		#white9 {position:absolute; margin-left:480px;}
+		#white10 {position:absolute; margin-left:540px;}
+		#black6 {position:absolute; margin-left:460px;}
+		#black7 {position:absolute; margin-left:520px;}
+		#white11 {position:absolute; margin-left:600px;}
+		#white12 {position:absolute; margin-left:660px;}
+		#white13 {position:absolute; margin-left:720px;}
+		#white14 {position:absolute; margin-left:780px;}
+		#black8 {position:absolute; margin-left:640px;}
+		#black9 {position:absolute; margin-left:700px;}
+		#black10 {position:absolute; margin-left:760px;}
+
+		#boneDiv {width:840px; height:310px; position:absolute; top:208px; left:50%; transform:translateX(-50%)}
+		#bone1 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone2 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone3 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone4 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone5 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone6 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone7 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone8 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone9 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone10 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone11 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone12 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone13 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone14 {width:60px; height:125px; top:130px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+
+
+		@keyframes bone {
+		from {top:130px; opacity:1;}
+		to {top:0px; opacity:0;}
+		}
+
+
+		#keyGuiedDiv {width:840px; height:150px; margin:auto; text-align:center; margin-top:20px;}
+
+		#iconDiv {width:50px; position:fixed; top:50px; left:50px;}
+    	#pianoIcon {width:50px;}
+    	#maracasuIcon {width:50px; position:relative; margin-top:30px;}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="omaenoDiv">
+		<img src="img/omaeno.png" id="omaeno">
+	</div>
+
+
+	<div id="boneDiv">
+	<div><img src="img/bone.png" id="bone1"></div>
+	<div><img src="img/bone.png" id="bone2"></div>
+	<div><img src="img/bone.png" id="bone3"></div>
+	<div><img src="img/bone.png" id="bone4"></div>
+	<div><img src="img/bone.png" id="bone5"></div>
+	<div><img src="img/bone.png" id="bone6"></div>
+	<div><img src="img/bone.png" id="bone7"></div>
+	<div><img src="img/bone.png" id="bone8"></div>
+	<div><img src="img/bone.png" id="bone9"></div>
+	<div><img src="img/bone.png" id="bone10"></div>
+	<div><img src="img/bone.png" id="bone11"></div>
+	<div><img src="img/bone.png" id="bone12"></div>
+	<div><img src="img/bone.png" id="bone13"></div>
+	<div><img src="img/bone.png" id="bone14"></div>
+	</div>
+
+
+	<div id="piano">
+		<img src="img/red.png" id="white1">
+		<img src="img/orange.png" id="white2">
+		<img src="img/yellow.png" id="white3">
+		<img src="img/black.png" id="black1">
+		<img src="img/black.png" id="black2">
+		<img src="img/green.png" id="white4">
+		<img src="img/sky.png" id="white5">
+		<img src="img/blue.png" id="white6">
+		<img src="img/violet.png" id="white7">
+		<img src="img/black.png" id="black3">
+		<img src="img/black.png" id="black4">
+		<img src="img/black.png" id="black5">
+
+		<img src="img/red.png" id="white8">
+		<img src="img/orange.png" id="white9">
+		<img src="img/yellow.png" id="white10">
+		<img src="img/black.png" id="black6">
+		<img src="img/black.png" id="black7">
+		<img src="img/green.png" id="white11">
+		<img src="img/sky.png" id="white12">
+		<img src="img/blue.png" id="white13">
+		<img src="img/violet.png" id="white14">
+		<img src="img/black.png" id="black8">
+		<img src="img/black.png" id="black9">
+		<img src="img/black.png" id="black10">
+		
+	</div>
+
+	<div>
+		<audio id=doo><source src="sound/do.mp3" type="audio/mpeg"></audio>
+		<audio id=re><source src="sound/re.mp3" type="audio/mpeg"></audio>
+		<audio id=mi><source src="sound/mi.mp3" type="audio/mpeg"></audio>
+		<audio id=fa><source src="sound/fa.mp3" type="audio/mpeg"></audio>
+		<audio id=sol><source src="sound/sol.mp3" type="audio/mpeg"></audio>
+		<audio id=ra><source src="sound/ra.mp3" type="audio/mpeg"></audio>
+		<audio id=si><source src="sound/si.mp3" type="audio/mpeg"></audio>
+		<audio id=odo><source src="sound/odo.mp3" type="audio/mpeg"></audio>
+		<audio id=ore><source src="sound/ore.mp3" type="audio/mpeg"></audio>
+		<audio id=omi><source src="sound/omi.mp3" type="audio/mpeg"></audio>
+		<audio id=ofa><source src="sound/ofa.mp3" type="audio/mpeg"></audio>
+		<audio id=osol><source src="sound/osol.mp3" type="audio/mpeg"></audio>
+		<audio id=ora><source src="sound/ora.mp3" type="audio/mpeg"></audio>
+		<audio id=osi><source src="sound/osi.mp3" type="audio/mpeg"></audio>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+		$(document).keydown(function(event) {
+	if (event.keyCode == '65') {
+	bone1.style.animationPlayState="running"; doo.play();
+	}
+
+	else if (event.keyCode == '83') {
+	bone2.style.animationPlayState="running"; re.play();
+	}
+
+	else if (event.keyCode == '68') {
+	bone3.style.animationPlayState="running"; mi.play();
+	}
+
+	else if (event.keyCode == '70') {
+	bone4.style.animationPlayState="running"; fa.play();
+	}
+
+	else if (event.keyCode == '71') {
+	bone5.style.animationPlayState="running"; sol.play();
+	}
+
+	else if (event.keyCode == '72') {
+	bone6.style.animationPlayState="running"; ra.play();
+	}
+
+	else if (event.keyCode == '74') {
+	bone7.style.animationPlayState="running"; si.play();
+	}
+
+	else if (event.keyCode == '81') {
+	bone8.style.animationPlayState="running"; odo.play();
+	}
+
+	else if (event.keyCode == '87') {
+	bone9.style.animationPlayState="running"; ore.play();
+	}
+
+	else if (event.keyCode == '69') {
+	bone10.style.animationPlayState="running"; omi.play();
+	}
+
+	else if (event.keyCode == '82') {
+	bone11.style.animationPlayState="running"; ofa.play();
+	}
+
+	else if (event.keyCode == '84') {
+	bone12.style.animationPlayState="running"; osol.play();
+	}
+
+	else if (event.keyCode == '89') {
+	bone13.style.animationPlayState="running"; ora.play();
+	}
+
+	else if (event.keyCode == '85') {
+	bone14.style.animationPlayState="running"; osi.play();
+	}
+
+});
+	</script>
+
+	<div id="keyGuiedDiv">
+		<img src="img/keyGuied.png">
+	</div>
+
+	<div id="iconDiv">
+		<a href="index.html"><img src="img/pianoIcon.png" id="pianoIcon"></a>
+		<a href="mara.html"><img src="img/maraIcon.png" id="maraIcon"></a>
+	</div>
+</body>
+</html>

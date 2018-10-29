@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>샤카샤카</title>
+	<script src="jquery-3.1.0.min.js"></script>
+	<style type="text/css">
+		html {background: url(img/background.gif) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+
+
+		#omaeno2Div {width:840px; height:300px; margin:auto; text-align:center;}
+		#omaeno2 {width:350px;}
+
+		#maraDiv {width:692px; height:310px; position:absolute; margin-top:-20px; left:50%; transform:translateX(-50%);}
+		#mara1 {position:absolute; top:0px; left:0px;}
+		#mara2 {position:absolute; top:80px; left:120px;}
+		#mara3 {position:absolute; top:0px; left:240px;}
+		#mara4 {position:absolute; top:80px; left:360px;}
+		#mara5 {position:absolute; top:0px; left:480px;}
+		#mara6 {position:absolute; top:80px; left:600px;}
+		
+
+		#boneDiv {width:692px; height:310px; position:absolute; top:265px; left:50%; transform:translateX(-50%)}
+		#bone1 {width:36px; height:36px; top:40px; left:25px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone2 {width:36px; height:36px; top:110px; left:115px; position:relative; animation:bonee 0.7s; animation-play-state: paused; float:left;}
+		#bone3 {width:36px; height:36px; top:40px; left:195px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone4 {width:36px; height:36px; top:110px; left:275px; position:relative; animation:bonee 0.7s; animation-play-state: paused; float:left;}
+		#bone5 {width:36px; height:36px; top:40px; left:360px; position:relative; animation:bone 0.7s; animation-play-state: paused; float:left;}
+		#bone6 {width:36px; height:36px; top:110px; left:445px; position:relative; animation:bonee 0.7s; animation-play-state: paused; float:left;}
+		
+
+
+		@keyframes bone {
+		from {top:40px; opacity:1;}
+		to {top:-20px; opacity:0;}
+		}
+
+		@keyframes bonee {
+		from {top:110px; opacity:1;}
+		to {top:50px; opacity:0;}
+		}
+
+
+
+		#keyGuied2Div {width:840px; height:150px; margin:auto; text-align:center; margin-top:380px;}
+
+		#iconDiv {width:50px; position:fixed; top:50px; left:50px;}
+    	#pianoIcon {width:50px;}
+    	#maracasuIcon {width:50px; position:relative; margin-top:30px;}
+
+	</style>
+
+</head>
+<body>
+	<div id="omaeno2Div">
+		<img src="img/omaeno2.png" id="omaeno2">
+	</div>
+
+
+	<div id="boneDiv">
+	<div><img src="img/bone2.png" id="bone1"></div>
+	<div><img src="img/bone2.png" id="bone2"></div>
+	<div><img src="img/bone2.png" id="bone3"></div>
+	<div><img src="img/bone2.png" id="bone4"></div>
+	<div><img src="img/bone2.png" id="bone5"></div>
+	<div><img src="img/bone2.png" id="bone6"></div>
+	</div>
+
+
+	<div id="maraDiv">
+		<img src="img/mara1.png" id="mara1">
+		<img src="img/mara2.png" id="mara2">
+		<img src="img/mara3.png" id="mara3">
+		<img src="img/mara4.png" id="mara4">
+		<img src="img/mara5.png" id="mara5">
+		<img src="img/mara6.png" id="mara6">
+	</div>
+
+	<div>
+		<audio id=doo><source src="sound/slap.mp3" type="audio/mpeg"></audio>
+		<audio id=re><source src="sound/balloonPopping.mp3" type="audio/mpeg"></audio>
+		<audio id=mi><source src="sound/glassBreak.mp3" type="audio/mpeg"></audio>
+		<audio id=fa><source src="sound/neckSnap.mp3" type="audio/mpeg"></audio>
+		<audio id=sol><source src="sound/smashing.mp3" type="audio/mpeg"></audio>
+		<audio id=ra><source src="sound/rooster.mp3" type="audio/mpeg"></audio>
+		
+	</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+		$(document).keydown(function(event) {
+	if (event.keyCode == '49') {
+	bone1.style.animationPlayState="running"; doo.play();
+	}
+
+	else if (event.keyCode == '50') {
+	bone2.style.animationPlayState="running"; re.play();
+	}
+
+	else if (event.keyCode == '51') {
+	bone3.style.animationPlayState="running"; mi.play();
+	}
+
+	else if (event.keyCode == '52') {
+	bone4.style.animationPlayState="running"; fa.play();
+	}
+
+	else if (event.keyCode == '53') {
+	bone5.style.animationPlayState="running"; sol.play();
+	}
+
+	else if (event.keyCode == '54') {
+	bone6.style.animationPlayState="running"; ra.play();
+	}
+});
+	</script>
+
+
+	<div id="keyGuied2Div">
+		<img src="img/keyGuied2.png">
+	</div>
+
+	<div id="iconDiv">
+		<a href="index.html"><img src="img/pianoIcon.png" id="pianoIcon"></a>
+		<a href="mara.html"><img src="img/maraIcon.png" id="maraIcon"></a>
+	</div>
+</body>
+</html>
